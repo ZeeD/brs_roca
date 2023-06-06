@@ -1,0 +1,11 @@
+namespace ns
+    class C
+    end class
+
+    function f() as string
+        return "..."
+    end function
+
+    sub s()
+    end sub
+end namespace

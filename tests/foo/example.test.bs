@@ -1,0 +1,19 @@
+import "pkg:/source/example.bs"
+
+function main(args as object) as object
+    return roca(args).describe("ns", sub()
+        m.it("contains a C class", sub()
+            obj = new ns.C()
+            m.assert.isValid(obj, "")
+        end sub)
+        m.it("contains an f function", sub()
+            actual = ns.f()
+            expected = "..."
+            m.assert.equal(actual, expected, "")
+        end sub)
+        m.it("contains a s sub", sub()
+            ns.s()
+            m.pass()
+        end sub)
+     end sub)
+end function

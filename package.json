@@ -1,0 +1,13 @@
+{
+    "name": "prova_bs",
+    "scripts": {
+        "clean": "rm -rf dist",
+        "pretest": "npm run clean",
+        "test": "bsc && cd dist && roca"
+    },
+    "devDependencies": {
+        "@hulu/roca": "^0.25.0",
+        "brighterscript": "^0.65.0",
+        "brs": "^0.43.0"
+    }
+}
